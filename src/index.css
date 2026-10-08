@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color-scheme: dark light;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom Brand Utilities */
+.bg-bitezzo-dark { background-color: #0D0D0D; }
+.bg-bitezzo-charcoal { background-color: #151515; }
+.bg-bitezzo-card { background-color: #1E1E1E; }
+.bg-bitezzo-red { background-color: #F0445A; }
+.bg-bitezzo-red-hover { background-color: #D9354B; }
+.bg-bitezzo-yellow { background-color: #F4D52E; }
+.bg-bitezzo-cream { background-color: #FFF8F0; }
+.bg-bitezzo-warm { background-color: #F9F6F1; }
+
+.text-bitezzo-red { color: #F0445A; }
+.text-bitezzo-yellow { color: #F4D52E; }
+.text-bitezzo-dark { color: #0D0D0D; }
+.text-bitezzo-charcoal { color: #151515; }
+.text-bitezzo-cream { color: #FFF8F0; }
+
+.border-bitezzo-red { border-color: #F0445A; }
+.border-bitezzo-yellow { border-color: #F4D52E; }
+
+html {
+  scroll-behavior: smooth;
+  background-color: #151515;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F0445A;
+}
+
+/* Hide scrollbar for horizontal scroll categories */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphic elements */
+.glass-panel {
+  background: rgba(21, 21, 21, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
